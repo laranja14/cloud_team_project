@@ -1,6 +1,6 @@
 import Axios from "axios"
 import Link from 'next/link'
-import { Header, Icon } from 'semantic-ui-react'
+import { Header, Icon, Button } from 'semantic-ui-react'
 
 export default function Top() {
     return (
@@ -11,11 +11,33 @@ export default function Top() {
                     <Header.Content>PageName</Header.Content>
                 </Header>
             </Link>
-            <Link href={"http://localhost:3000/login"}>
-                <div style={{ margin: 20, marginLeft: -60 }}>
-                    login
-                </div>
-            </Link>
+            <div>
+                <Link href={"http://localhost:3000/login"}>
+                    <div style={{ margin: 20, marginLeft: -60 }}>
+                        login
+                    </div>
+                </Link>
+            </div>
         </div >
     )
 }
+
+// function Guest() {
+//     return (
+//         <Link href={"http://localhost:3000/login"}>
+//             <div style={{ margin: 20, marginLeft: -60 }}>
+//                 login
+//             </div>
+//         </Link>
+//     )
+// }
+
+// function User() {
+//     return (
+//         <Link href={"../../pages/api/logout"}>
+//             <div style={{ margin: 20, marginLeft: -60 }}>
+//                 login
+//             </div>
+//         </Link>
+//     )
+// }
