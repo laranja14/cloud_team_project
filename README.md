@@ -50,6 +50,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 
-**흐름 예시)**
+**흐름 예시)**![redux_map](https://media.vlpt.us/images/sksgur3217/post/2ce0c0fe-cfe0-4f40-aa13-b8ea46d819e8/image.png)
 
-![redux_map](C:\Users\Home\Desktop\프로젝트\redux_map.png)
