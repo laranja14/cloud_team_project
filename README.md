@@ -32,3 +32,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+------
+
+## 2022-03-28
+
+**WEB UI 초안 설계**
+
+
+
+**redux 개념, 구조 익히기**
+
+- status를 효율적으로 관리하는 목적의 라이브러리
+- 리듀서를 작성하고 스토어를 생성해 스토어에서 모든 상태를 관리
+
+
+
+**흐름 예시)**
+
+![redux_map](C:\Users\Home\Desktop\프로젝트\redux_map.png)
