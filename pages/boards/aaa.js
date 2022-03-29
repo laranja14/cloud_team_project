@@ -1,9 +1,9 @@
 import Link from "next/link"
 
-export default function Board() {
+export default function aaa() {
     return (
         <div style={{ textAlign: "center" }}>
-            <h1>Board_main</h1>
+            <h1>aaa</h1>
             <div>
                 <ol>
                     <li>
