@@ -2,9 +2,11 @@ import Link from "next/link"
 
 export default function Board() {
     return (
-        <div style={{ textAlign: "center" }}>
-            <h1>Board_main</h1>
-            <div>
+        <div>
+            <div style={{ textAlign: "center", margin: "30px" }}>
+                <h1>Board_main</h1>
+            </ div >
+            <div style={{ display: "flex", justifyContent: "center" }}>
                 <ol>
                     <li>
                         <Link href="http://localhost:3000/boards/aaa">aaa</Link>
@@ -14,7 +16,8 @@ export default function Board() {
                     </li>
                 </ol>
             </div>
-        </div >
+        </div>
+
     )
 }
 

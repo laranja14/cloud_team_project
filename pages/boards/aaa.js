@@ -4,7 +4,7 @@ export default function aaa() {
     return (
         <div style={{ textAlign: "center" }}>
             <h1>aaa</h1>
-            <div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
                 <ol>
                     <li>
                         <Link href="http://localhost:3000/boards/aaa">aaa</Link>

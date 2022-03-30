@@ -52,3 +52,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 **흐름 예시)**![redux_map](https://media.vlpt.us/images/sksgur3217/post/2ce0c0fe-cfe0-4f40-aa13-b8ea46d819e8/image.png)
 
+## 2022-03-30
+
+heder, Gnb 수정
+
+경기일정 페이지 추가
+
+메인 페이지, 베팅 페이지 수정 시작
+

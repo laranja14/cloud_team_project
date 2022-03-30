@@ -6,7 +6,7 @@ import Gnb from "../src/component/Gnb.js"
 
 function MyApp({ Component, pageProps }) {
   return (
-    < div>
+    <div style={{ backgroundColor: "#F9F9F9" }}>
       <Top />
       <Gnb />
       <Component {...pageProps} />

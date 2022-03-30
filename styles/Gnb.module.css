@@ -3,7 +3,7 @@
     text-decoration: none;
     align-items: left;
     cursor: pointer;
-
+    margin-right: -130px;
 }
 
 .logo:hover {
