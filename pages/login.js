@@ -8,7 +8,7 @@ export default function Login() {
         Axios.post("/api/login").then((res) => {
             if (res.status === 200) {
                 //로그인 성공
-                router.push("/")
+                router.push("/betting")
             }
         })
     }

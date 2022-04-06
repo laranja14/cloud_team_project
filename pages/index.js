@@ -1,6 +1,24 @@
-import { Table } from 'semantic-ui-react'
+import Axios from 'axios';
+import { useEffect, useState } from 'react'
+import Link from 'next/link';
+// import { Table } from 'semantic-ui-react'
+import RanNumTest from '../src/component/RanNumTest';
 import Betline from '../src/component/Betline'
+
 export default function Home() {
+  const [list, setList] = useState([]);
+
+  function getData() {
+    Axios.get('/api/betline').then((res) => {
+      console.log(res.data);
+      setList(res.data)
+    })
+  }
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div>
       <div style={{ textAlign: "center", margin: "30px" }}>
@@ -8,9 +26,12 @@ export default function Home() {
           /
           Most Popular</h2>
       </div>
-      <Betline></Betline>
-      <Betline></Betline>
-      <Betline></Betline>
+      <Link href="/betting">
+        <a>
+          <Betline list={list} />
+        </a>
+      </Link>
+      <RanNumTest />
     </div>
   )
 }

@@ -2,10 +2,10 @@ import { Tab, Icon, Select } from 'semantic-ui-react'
 
 export default function Schedule() {
     const panes = [
-        { menuItem: '1주차', render: () => <Tab.Pane>Tab 1 Content</Tab.Pane> },
-        { menuItem: '2주차', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
-        { menuItem: '3주차', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
-        { menuItem: '4주차', render: () => <Tab.Pane>Tab 4 Content</Tab.Pane> },
+        { menuItem: '1주차', render: () => <Tab.Pane>경기 없음</Tab.Pane> },
+        { menuItem: '2주차', render: () => <Tab.Pane>경기 없음</Tab.Pane> },
+        { menuItem: '3주차', render: () => <Tab.Pane>경기 없음</Tab.Pane> },
+        { menuItem: '4주차', render: () => <Tab.Pane>경기 없음</Tab.Pane> },
     ]
 
     const esportLeagueList = [
