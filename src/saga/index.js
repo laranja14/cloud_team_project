@@ -14,7 +14,11 @@ function* fetchCallData() {
 function* watchCall() {
     yield takeEvery(CALL_DATA_REQUEST, fetchCallData);
 }
-
-export default function* root() {
-    yield spawn(watchCall);
+export default function* ranNumSaga() {
+    yield all([
+        fork(watchCall)
+    ]);
 }
+// export default function* root() {
+//     yield spawn(watchCall);
+// }

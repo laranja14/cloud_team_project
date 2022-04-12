@@ -1,10 +1,10 @@
-import { applyMiddleware, compose, createStore } from 'redux'
-import createSagaMiddleware, { END } from 'redux-saga'
+import { applyMiddleware, createStore } from 'redux'
+import createSagaMiddleware from 'redux-saga'
 import { createWrapper } from 'next-redux-wrapper'
 
 import rootReducer from '../reducers/root-reducer'
-// import rootSaga from '../saga/root-saga'
-import rootSaga from '../saga/index'
+import rootSaga from '../saga/root-saga'
+// import rootSaga from '../saga/match-saga'
 
 const bindMiddleware = (middleware) => {
     if (true) {

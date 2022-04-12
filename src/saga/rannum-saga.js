@@ -12,7 +12,7 @@
 
 import { call, spawn, put, takeEvery } from "redux-saga/effects";
 import axios from "axios";
-import { CALL_DATA_REQUEST, callDataFailure, callDataSuccess } from "../actions";
+import { CALL_DATA_REQUEST, callDataSuccess, callDataFailure } from "../actions";
 
 function* fetchCallData() {
     const { data } = yield axios.get("http://localhost:4321");
@@ -27,6 +27,11 @@ function* watchCall() {
     yield takeEvery(CALL_DATA_REQUEST, fetchCallData);
 }
 
-export default function* root() {
-    yield spawn(watchCall);
+// export default function* ranNumSaga() {
+//     yield all([
+//         fork(watchCall)
+//     ]);
+// }
+export default function* ranNumSaga() {
+    yield call(watchCall);
 }

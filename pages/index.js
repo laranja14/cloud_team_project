@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link';
 // import { Table } from 'semantic-ui-react'
 import RanNumTest from '../src/component/RanNumTest';
+import MatchTest from '../src/component/MatchTest';
 import Betline from '../src/component/Betline'
+import { useSelector } from 'react-redux';
 
 export default function Home() {
   const [list, setList] = useState([]);
@@ -19,6 +21,12 @@ export default function Home() {
     getData();
   }, []);
 
+  const match = useSelector(state => state.matchReducer)
+  const states = useSelector(state => state)
+
+  console.log(states)
+  console.log(match)
+
   return (
     <div>
       <div style={{ textAlign: "center", margin: "30px" }}>
@@ -32,6 +40,9 @@ export default function Home() {
         </a>
       </Link>
       <RanNumTest />
+      {/* <MatchBetline list={match} /> */}
+      <MatchTest />
     </div>
   )
 }
+

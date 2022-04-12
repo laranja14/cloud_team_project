@@ -1,25 +1,15 @@
-import produce from "immer"
 import { CALL_MATCH_REQUEST, CALL_MATCH_SUCCESS, CALL_MATCH_FAILURE } from '../actions'
+import produce from "immer";
 
 const initState = {
-    id: "",
-    tournament: "",
-
-    leftTeam: "",
-    leftOdds: "",
-
-    rightTeam: "",
-    rightOdds: "",
-
-    betlineDate: ""
+    match: Array
 };
 
-
-const match = (state = initState, action) => {
+const data = (state = initState, action) => {
     return produce(state, draft => {
         switch (action.type) {
             case CALL_MATCH_SUCCESS:
-                draft.match = action.match;
+                draft.match = action.data["schedules"];
                 break;
             default:
                 break;
@@ -27,4 +17,4 @@ const match = (state = initState, action) => {
     })
 }
 
-export default match;
+export default data;

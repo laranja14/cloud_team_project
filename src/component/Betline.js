@@ -21,12 +21,13 @@ import styles from '../../styles/Betline.module.css';
 // }
 
 export default function Betline({ list }) {
+    console.log(list)
     return (
         <div>
             {list.betline && list.betline.items.map((item) => (
                 <div className={styles.betlineWide}>
                     <div className={styles.tournament}>{item.tournament}</div>
-                    <duv className={styles.matchup}>
+                    <div className={styles.matchup}>
                         <button className={styles.leftMatch} >
                             <div className={styles.leftTeam} >{item.leftTeam}</div>
                             <div className={styles.leftOdds} >{item.leftOdds}</div>
@@ -36,7 +37,7 @@ export default function Betline({ list }) {
                             <div className={styles.rightOdds}>{item.rightOdds}</div>
                             <div className={styles.rightTeam}>{item.rightTeam}</div>
                         </button>
-                    </duv>
+                    </div>
                     <div className={styles.betlineDate}>{item.betlineDate}</div>
                 </div>
             ))}

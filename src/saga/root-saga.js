@@ -1,13 +1,15 @@
-import { all, fork } from 'redux-saga/effects';
-import axios from 'axios';
-import watchCall from './rannum-saga';
+import { call, all, fork, spawn } from 'redux-saga/effects';
+
+import ranNumSaga from './rannum-saga';
 import matchSaga from './match-saga';
+
+import axios from 'axios';
 
 axios.defaults.withCredentials = true;
 
 export default function* rootSaga() {
-    yield spawn(watchCall);
     yield all([
-        fork(matchSaga)
+        call(matchSaga),
+        call(ranNumSaga)
     ]);
 }
